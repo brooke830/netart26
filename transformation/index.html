@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation Page</title>
+    <style>
+        /* Base identity: Calm, cool colors */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #a0d8f1;
+            color: #003366;
+            text-align: center;
+            transition: all 1s ease;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-top: 20vh;
+            transition: all 1s ease;
+        }
+
+        p {
+            font-size: 1.2em;
+            transition: all 1s ease;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #003366;
+            color: white;
+            transition: all 0.5s ease;
+        }
+
+        button:hover {
+            background-color: #0055aa;
+        }
+
+        /* Transformed identity: Warm, energetic */
+        body.transformed {
+            background-color: #f1a0a0;
+            color: #660000;
+        }
+
+        body.transformed h1 {
+            transform: rotate(-5deg) scale(1.2);
+            color: #ff3300;
+        }
+
+        body.transformed p {
+            font-size: 1.5em;
+        }
+
+        body.transformed button {
+            background-color: #660000;
+            color: #ffccaa;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Your Calm Page</h1>
+    <p>Click the button to transform this page.</p>
+    <button onclick="toggleTransform()">Transform!</button>
+
+    <script>
+        function toggleTransform() {
+            document.body.classList.toggle('transformed');
+        }
+    </script>
+</body>
+</html>
