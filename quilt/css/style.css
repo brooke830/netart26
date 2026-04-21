@@ -1,0 +1,56 @@
+/* ===== EXISTING CODE (UNCHANGED ABOVE THIS LINE) ===== */
+
+/* Remove default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make body full screen */
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Grid container */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Base tile */
+.tile {
+  width: 100%;
+  height: 100%;
+}
+
+/* Pastel colors */
+.pink { background-color: #f8c8dc; }
+.blue { background-color: #cde7f0; }
+.yellow { background-color: #fff1b6; }
+.green { background-color: #c8f2d1; }
+.lavender { background-color: #e6d6f5; }
+
+
+/* ===== SUNSET MODE (ADDED) ===== */
+
+/* smooth transitions */
+.tile {
+  transition: background-color 1s ease;
+}
+
+/* sunset sky background */
+body.sunset {
+  background: linear-gradient(135deg, #ff5f6d, #ffc371, #ff9a9e, #fbc2eb);
+}
+
+/* sunset tile colors */
+body.sunset .pink { background-color: #ff6b81; }
+body.sunset .blue { background-color: #ffb86b; }
+body.sunset .yellow { background-color: #ff7eb3; }
+body.sunset .green { background-color: #ff9f68; }
+body.sunset .lavender { background-color: #ff8dc7; }
